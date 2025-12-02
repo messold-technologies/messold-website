@@ -1139,7 +1139,15 @@ module.exports = function(app)
     {
         res.render('case-study1.html')
     })
+    app.get('/case-study-1', function(req, res)
+    {
+        res.render('case-study1.html')
+    })
     app.get('/esme-crystals', function(req, res)
+    {
+        res.render('esme-case-study.html')
+    })
+    app.get('/esme-case-study', function(req, res)
     {
         res.render('esme-case-study.html')
     })
@@ -1147,7 +1155,15 @@ module.exports = function(app)
     {
         res.render('udd-case-study.html')
     })
+    app.get('/udd-case-study', function(req, res)
+    {
+        res.render('udd-case-study.html')
+    })
     app.get('/harrys', function(req, res)
+    {
+        res.render('harrys-case-study.html')
+    })
+    app.get('/harrys-case-study', function(req, res)
     {
         res.render('harrys-case-study.html')
     })
@@ -1155,7 +1171,15 @@ module.exports = function(app)
     {
         res.render('lost-in-case-study.html')
     })
+    app.get('/lost-in-case-study', function(req, res)
+    {
+        res.render('lost-in-case-study.html')
+    })
     app.get('/kimtrue', function(req, res)
+    {
+        res.render('kimtrue-case-study.html')
+    })
+    app.get('/kimtrue-case-study', function(req, res)
     {
         res.render('kimtrue-case-study.html')
     })
@@ -1163,7 +1187,15 @@ module.exports = function(app)
     {
         res.render('leaf-case-study.html')
     })
+    app.get('/leaf-case-study', function(req, res)
+    {
+        res.render('leaf-case-study.html')
+    })
     app.get('/phuljhadi', function(req, res)
+    {
+        res.render('phuljhadi-case-study.html')
+    })
+    app.get('/phuljhadi-case-study', function(req, res)
     {
         res.render('phuljhadi-case-study.html')
     })
@@ -1171,7 +1203,15 @@ module.exports = function(app)
     {
         res.render('powersutra-case-study.html')
     })
+    app.get('/powersutra-case-study', function(req, res)
+    {
+        res.render('powersutra-case-study.html')
+    })
     app.get('/rb-organics', function(req, res)
+    {
+        res.render('rb-organics-case-study.html')
+    })
+    app.get('/rb-organics-case-study', function(req, res)
     {
         res.render('rb-organics-case-study.html')
     })
@@ -1179,7 +1219,19 @@ module.exports = function(app)
     {
         res.render('rock-your-baby-case-study.html')
     })
+    app.get('/rock-your-baby-case-study', function(req, res)
+    {
+        res.render('rock-your-baby-case-study.html')
+    })
     app.get('/theme-my-party', function(req, res)
+    {
+        res.render('tmp-case-study.html')
+    })
+    app.get('/theme-my-party-case-study', function(req, res)
+    {
+        res.render('tmp-case-study.html')
+    })
+    app.get('/tmp-case-study', function(req, res)
     {
         res.render('tmp-case-study.html')
     })
