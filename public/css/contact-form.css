@@ -1,0 +1,544 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.main-nav .menu-icon .line-1, .main-nav .menu-icon .line-2, .main-nav .menu-icon .line-3{
+  background-color: black;
+}
+section#main-header-padding .logo img{
+position: relative;
+margin-top: 8px;
+}
+
+@media (max-width: 768px){
+.main-nav .menu-icon .line-1, .main-nav .menu-icon .line-2, .main-nav .menu-icon .line-3{
+  background-color: white;
+}
+}
+
+.main-nav .menu-icon .line-1, .main-nav .menu-icon .line-2, .main-nav .menu-icon .line-3{
+  background-color: white;
+}
+
+   section#main-header-padding{
+padding: 5px 30px !important;
+position: absolute;
+top: 0;
+z-index: 9999;
+right: 0;
+left: 0;
+margin-bottom: 50px !important;
+}
+
+section#main-header-padding .logo img{
+position: relative;
+margin-top: 8px;
+}
+section#contactForm .white-contact{
+
+display:none;
+}
+section#contactForm .form-group {
+margin-bottom: 30px;
+width: 100%;
+margin-right: 50px;
+}
+section#contactForm .black-contact{
+
+padding: 100px 200px;
+}
+section#contactForm input[type=text]:focus,
+section#contactForm input[type=number]:focus,
+section#contactForm input[type=email]:focus,
+textarea:focus {
+outline: none;
+background-color: transparent;
+color: black;
+position: relative;
+}
+
+section#contactForm input[type=text],
+section#contactForm input[type=number],
+section#contactForm input[type=email],
+textarea {
+width: 100%;
+border: none;
+border-bottom: 2px solid #3c4742;
+background-color: transparent;
+padding: 10px 0;
+color: black !important;
+}
+#partners {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 70px 0;
+text-align: center;
+margin-bottom: 0 !important;
+
+}
+
+#partners div:nth-child(1) {
+padding-left: 40px;
+font-size: 3rem;
+}
+
+#partners div:nth-child(2) {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex: 2;
+}
+
+#partners div:nth-child(2) img {
+height: 100px;
+width: 15%;
+object-fit: contain;
+image-rendering: -webkit-optimize-contrast;
+text-align: center;
+}
+.flex-contact-form{
+background-color: white !important;
+color: black !important; 
+}
+section#contactForm div:nth-child(1) {
+color: black;
+}
+section#contactForm .form-group select{
+background-color: black;
+color: white
+}
+@media (max-width: 1024px){
+
+section#contactForm .black-contact{
+
+padding: 50px 20px;
+}
+section#contactForm .submit-button[type=submit]{
+background-color: black !important;
+color: white !important;
+}
+#partners {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #F0F1F2;
+padding: 70px 0;
+text-align: center;
+margin-bottom: 0 !important;flex-direction: column;
+}
+
+#partners div:nth-child(1) {
+padding-left: 40px;
+font-size: 3rem;
+}
+
+#partners div:nth-child(2) {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex: 2;
+}
+
+#partners div:nth-child(2) img {
+height: 100px;
+width: 15%;
+object-fit: contain;
+image-rendering: -webkit-optimize-contrast;
+text-align: center;
+}
+.hero-banner-contact{
+background-color: black !important;
+color: white !important;
+padding: 100px 20px 20px !important;
+
+}
+.hero-banner-contact h2{
+font-size: 1.9rem !important;
+margin-bottom: 10px;
+}
+.hero-banner-contact p{
+font-size: 1.4rem !important;
+margin-bottom: 10px;
+line-height: 2;
+}
+#brands{
+padding: 5px 20px !important;
+}
+  #brands .lower{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#brands .lower .logo{
+    margin-right: 0px;
+    margin-top: 20px;
+}
+#brands .upper{
+flex-direction: column;
+}
+#brands .upper p{
+width: 100% !important;
+}
+
+#brands .upper h3{
+width: 100%;
+font-size: 1.2rem !important;
+font-weight: bold;
+margin-bottom: 15px;
+}
+#brands .lower .logo{
+margin-right: 0px !important;
+margin-top: 15px !important;
+}
+
+.page-header{
+height: 0vh !important;
+}
+}
+
+.hero-banner-contact{
+background-color: black !important;
+color: white !important;
+padding: 120px 200px;
+
+}
+
+.hero-banner-contact h2{
+font-size: 3.4rem;
+margin-bottom: 30px;
+}
+
+.hero-banner-contact p{
+line-height: 2rem;
+font-size: 2rem;
+color: #e2e2e28a;
+
+}
+
+#brands{
+/*height: 50vh;*/
+padding: 10px 200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+line-height: 1.7
+}
+
+#brands .upper{
+display: flex;
+align-content: center;
+justify-content: space-between;
+}
+
+#brands .upper h3{
+font-size: 1.8rem;
+letter-spacing: 3px;
+font-weight: 300;
+max-width: 1200px;
+}
+#brands .upper p{
+font-size: 1rem;
+font-weight: 200;
+width: 40%;
+max-width: 1200px;
+}
+#brands .upper a{
+text-decoration:none;
+color: black;
+border: 1px solid black;
+font-size: 1rem;
+padding: 10px 20px 10px 20px;
+display: block;
+/* margin-top: 20px; */
+}
+
+#brands .upper a:hover{
+color: white;
+background-color: black;
+transition: all 0.4s;
+}
+#brands .lower{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+#brands .lower .logo{
+margin-right: 50px;
+margin-top: 70px;
+}
+#brands .lower .logo img{
+height: 45px !important;
+width: 100px;
+object-fit: contain;
+
+}
+#brands .lower .logo:last-child{
+margin-right: 0;
+}
+
+
+section#main-header-padding{
+  padding: 5px 30px !important;
+  position: absolute;
+    top: 0;
+    z-index: 9999;
+    right: 0;
+    left: 0;
+    margin-bottom: 50px !important;
+}
+
+    .main-nav .menu-icon .line-1, .main-nav .menu-icon .line-2, .main-nav .menu-icon .line-3{
+      background-color: white;
+    }
+
+     .hero-banner-contact{
+  background-color: black !important;
+  color: white !important;
+  padding: 120px 200px;
+
+}
+
+.hero-banner-contact h2{
+  font-size: 3.4rem;
+  margin-bottom: 30px;
+}
+
+.hero-banner-contact p{
+  line-height: 2rem;
+  font-size: 2rem;
+  color: #e2e2e28a;
+
+}
+section#contactForm .white-contact{
+  
+  display:none;
+}
+section#contactForm .form-group {
+    margin-bottom: 30px;
+    width: 100%;
+    margin-right: 50px;
+}
+section#contactForm .black-contact{
+
+  padding: 100px 200px;
+}
+  section#contactForm input[type=text]:focus,
+  section#contactForm input[type=number]:focus,
+  section#contactForm input[type=email]:focus,
+  textarea:focus {
+    outline: none;
+    background-color: transparent;
+    color: black;
+    position: relative;
+  }
+
+  section#contactForm input[type=text],
+  section#contactForm input[type=number],
+  section#contactForm input[type=email],
+  textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #3c4742;
+    background-color: transparent;
+    padding: 10px 0;
+    color: black !important;
+  }
+#partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0;
+    text-align: center;
+    margin-bottom: 0 !important;
+
+  }
+  
+  #partners div:nth-child(1) {
+    padding-left: 40px;
+    font-size: 3rem;
+  }
+  
+  #partners div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 2;
+  }
+  
+  #partners div:nth-child(2) img {
+    height: 100px;
+    width: 15%;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+    text-align: center;
+  }
+.flex-contact-form{
+  background-color: white !important;
+  color: black !important; 
+}
+section#contactForm div:nth-child(1) {
+    color: black;
+}
+section#contactForm .form-group select{
+  background-color: black;
+  color: white
+}
+
+#brands{
+    /*height: 50vh;*/
+    padding: 10px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.7
+}
+
+#brands .upper{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#brands .upper h3{
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    font-weight: 300;
+    max-width: 1200px;
+}
+#brands .upper p{
+    font-size: 1rem;
+    font-weight: 200;
+    width: 40%;
+    max-width: 1200px;
+}
+#brands .upper a{
+    text-decoration:none;
+    color: black;
+    border: 1px solid black;
+    font-size: 1rem;
+    padding: 10px 20px 10px 20px;
+    display: block;
+    /* margin-top: 20px; */
+}
+
+#brands .upper a:hover{
+    color: white;
+    background-color: black;
+    transition: all 0.4s;
+}
+#brands .lower{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+
+#brands .lower .logo{
+    margin-right: 50px;
+    margin-top: 70px;
+}
+#brands .lower .logo img{
+    height: 45px !important;
+    width: 100px;
+    object-fit: contain;
+
+}
+#brands .lower .logo:last-child{
+    margin-right: 0;
+}
+@media (max-width: 1024px){
+
+  section#contactForm .black-contact{
+
+  padding: 100px 20px;
+}
+
+.hero-banner-contact{
+  background-color: black !important;
+  color: white !important;
+  padding: 100px 20px 20px !important;
+
+}
+.hero-banner-contact h2{
+  font-size: 1.9rem !important;
+  margin-bottom: 10px;
+}
+.hero-banner-contact p{
+  font-size: 1.4rem !important;
+  margin-bottom: 10px;
+  line-height: 2;
+}
+
+#brands{
+  padding: 5px 20px !important;
+}
+      #brands .lower{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    #brands .lower .logo{
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    #brands .upper{
+  flex-direction: column;
+}
+#brands .upper p{
+    width: 100% !important;
+}
+
+#brands .upper h3{
+  width: 100%;
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+#brands .lower .logo{
+    margin-right: 0px !important;
+    margin-top: 15px !important;
+}
+section#contactForm .submit-button[type=submit]{
+  background-color: black !important;
+  color: white !important;
+}
+#partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F1F2;
+    padding: 70px 0;
+    text-align: center;
+    margin-bottom: 0 !important;flex-direction: column;
+  }
+  
+  #partners div:nth-child(1) {
+    padding-left: 40px;
+    font-size: 3rem;
+  }
+  
+  #partners div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 2;
+  }
+  
+  #partners div:nth-child(2) img {
+    height: 100px;
+    width: 15%;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+    text-align: center;
+  }
+}

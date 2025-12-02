@@ -1,0 +1,107 @@
+@media (max-width:1024px) and (min-width:769px) {
+    .main-nav-items .info-menu, .main-nav-items .menu {
+        padding: 30px;
+    }
+    .main-nav-items .menu li {
+        text-align: left;
+    }
+    
+    div#home-video {
+        margin-bottom: 45px !important;
+    }
+    #clients-section .clients-section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 2rem;
+    }
+    .swiper-container-image .swiper-slide img {
+        height: 400px;
+        object-fit: contain;
+    }
+    .swiper-container-image {
+        margin-top: -130px;
+    }
+    .footer-1{
+  	     display: none !important;
+    }
+    .form-flex{
+        flex-direction: column;
+    }
+    a.req-button{
+        width: 100%;
+    }
+    .portfolio-cover img {
+        width: 300px;
+    }
+    .portfolio-slider {
+        overflow: hidden;
+        width: 450px;
+    }
+    .portfolio-content {
+        width: 35%;
+    }
+    .portfolio-heading {
+        font-size: 18px;
+    }
+    .portfolio-button {
+        margin-top: 35px;
+    }
+    .channels {
+        margin-bottom: 40px !important;
+    }
+    section#results {
+        padding: 70px 27px;
+    }
+    h2.matrix-heading {
+        font-size: 3.5rem;
+    }
+    #results .grids .grid {
+        padding: 20px 35px 20px 35px;
+    }
+
+    section#client-review {
+        padding: 50px 0px 10px;
+    }
+    .big-heading-text-review {
+        font-size: 2.5rem;
+            width: 85%;
+    }
+    .left-quot-review {
+    margin-left: -25px;
+    }
+
+    .leadingPartnerInfo {
+        padding: 15px;
+    }
+
+    .ourLeadingPartnersList {
+        grid-column-gap: 15px;
+    }
+
+    section#who-we-are {
+        margin-bottom: 40px !important;
+    }
+    .bind-brands {
+        margin-top: 40px;
+    }
+    .main-content-flex {
+        width: 85%;
+    }
+    .main-content-flex .big-heading-text {
+        font-size: 4.5rem;
+    }
+
+    .certifications-gallery {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 3.5rem;
+}
+
+    #epic-timezone {
+        justify-content: space-evenly;
+        width: 60%;
+    }
+    .topSectionTypingContainer {
+        font-size: 5.8rem
+    }
+}
