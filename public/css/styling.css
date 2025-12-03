@@ -758,7 +758,7 @@ a.black-button {
 @media (max-width: 1024px) {
   .hero-overlay {
     place-items: end center;
-    padding-bottom: clamp(20px, 4vh, 88px);
+    padding-bottom: clamp(20px, 10vh, 88px);
   }
   .hero-overlay-content {
     text-align: left;
@@ -11966,3 +11966,4 @@ display: none;
   opacity: 1;
 
 }
+
