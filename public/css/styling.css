@@ -4815,7 +4815,7 @@ h2#starlight-project-title span {
   color: #000;
 }
 
-#cs-page-goal-1 .csgoal__sub, .csps-story__body, .csgoal__sub, #csps-title-solution, .csps-story__body ul li {
+#cs-page-goal-1 .csgoal__sub, .csps-story__body, .csgoal__sub, #csps-title-solution, .csps-story__text ul li {
   max-width: 70ch;
   margin: 0 auto;
   font-size: clamp(1rem, 2.2vw, 1.125rem);
@@ -4824,7 +4824,7 @@ h2#starlight-project-title span {
   color: var(--csgoal-muted);
 }
 
-#cs-page-goal-1 .csgoal__sub, .csps-story__body, .csgoal__sub, #csps-title-solution, .csps-story__body ul li  {
+#cs-page-goal-1 .csgoal__sub, .csps-story__body, .csgoal__sub, #csps-title-solution, .csps-story__text ul li  {
  text-align: left;
 }
 
@@ -11974,6 +11974,7 @@ display: none;
   opacity: 1;
 
 }
+
 
 
 
