@@ -4815,7 +4815,7 @@ h2#starlight-project-title span {
   color: #000;
 }
 
-#cs-page-goal-1 .csgoal__sub, .csps-story__body {
+#cs-page-goal-1 .csgoal__sub, .csps-story__body, .csgoal__sub {
   max-width: 70ch;
   margin: 0 auto;
   font-size: clamp(1rem, 2.2vw, 1.125rem);
@@ -4824,7 +4824,7 @@ h2#starlight-project-title span {
   color: var(--csgoal-muted);
 }
 
-#cs-page-goal-1 .csgoal__sub, .csps-story__body  {
+#cs-page-goal-1 .csgoal__sub, .csps-story__body, csgoal__sub  {
  text-align: left;
 }
 
@@ -11967,6 +11967,7 @@ display: none;
   opacity: 1;
 
 }
+
 
 
 
