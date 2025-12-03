@@ -4772,7 +4772,7 @@ h2#starlight-project-title span {
   }
 }
 
-#cs-page-goal-1 {
+#cs-page-goal-1, #cs-page-story {
   --csgoal-maxw: 1200px;
   --csgoal-padX: clamp(16px, 4vw, 40px);
   --csgoal-padY: clamp(32px, 7vw, 80px);
@@ -4782,7 +4782,7 @@ h2#starlight-project-title span {
   --csgoal-label: #222;
 }
 
-.cs-page-goal {
+.cs-page-goal, .cs-page-story {
   background: var(--csgoal-bg);
   color: var(--csgoal-text);
   text-align: center;
@@ -4790,7 +4790,7 @@ h2#starlight-project-title span {
 }
 
 /* Container */
-#cs-page-goal-1 .csgoal__container {
+#cs-page-goal-1 .csgoal__container, #cs-page-story .csps-story__container {
   max-width: var(--csgoal-maxw);
   margin-inline: auto;
   padding: var(--csgoal-padY)
@@ -4799,7 +4799,7 @@ h2#starlight-project-title span {
 }
 
 /* Typography */
-#cs-page-goal-1 .csgoal__eyebrow {
+#cs-page-goal-1 .csgoal__eyebrow, #cs-page-story .csps-story__text .csps-story__eyebrow {
   margin: 0 0 10px;
   font-size: 0.95rem;
   color: var(--csgoal-label);
@@ -11966,4 +11966,5 @@ display: none;
   opacity: 1;
 
 }
+
 
