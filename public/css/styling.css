@@ -4834,6 +4834,10 @@ h2#csps-title-solution, h2#csps-title-results {
     margin-top: 1rem;
 }
 
+.csgoal__container, .csps-story__container.csps-story__container-new, .csps-story__container {
+    padding-bottom: 0 !important;
+}
+
 /* Old-browser fallback (no clamp support not typical; grid not needed) */
 @supports not (font-size: clamp(1rem, 2vw, 2rem)) {
   #cs-page-goal-1 .csgoal__title {
@@ -4886,13 +4890,14 @@ padding: 0 2rem;  }
   font-size: clamp(1.1rem, 3.2vw, 1.3rem);
   text-wrap: balance;
 }
+.csps-story__container {
+    padding: 2rem 2rem 0rem !important;
+}
 @supports not (text-wrap: balance) {
   .csquote__blockquote p {
     hyphens: auto;
   }
-  .csps-story__container {
-    padding: 0px 2rem 3rem !important;
-  }
+  
 }
 
 /* Attribution */
@@ -11976,6 +11981,7 @@ display: none;
   opacity: 1;
 
 }
+
 
 
 
