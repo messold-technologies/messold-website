@@ -4828,6 +4828,13 @@ h2#starlight-project-title span {
  text-align: left;
 }
 
+h2#csps-title-solution {
+    max-width: 65ch;
+    font-weight: 600;
+    color: #000;
+    margin-top: 1rem;
+}
+
 /* Old-browser fallback (no clamp support not typical; grid not needed) */
 @supports not (font-size: clamp(1rem, 2vw, 2rem)) {
   #cs-page-goal-1 .csgoal__title {
@@ -11967,6 +11974,7 @@ display: none;
   opacity: 1;
 
 }
+
 
 
 
