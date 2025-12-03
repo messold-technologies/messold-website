@@ -575,6 +575,7 @@ th{
   /* background: #000; */
   isolation: isolate; /* contain blending/filters */
   margin-top: -1rem;
+  margin-bottom: -1rem;
 }
 
 /* ===== Video fills cover ===== */
@@ -599,7 +600,8 @@ th{
   display: grid;
   place-items: end; /* center on large screens */
   padding: var(--gutter);
-  padding-bottom: 3rem;
+  padding-bottom: 7rem;
+  background: #00000021;
 }
 
 .hero-overlay-content {
@@ -771,7 +773,7 @@ a.black-button {
 @media (max-width: 640px) {
   .hero {
     min-height: unset !important;
-    height: 50vh;
+    height: 75vh;
   }
   
   .hero-btns {
@@ -11962,4 +11964,5 @@ display: none;
   height: 100%;
   border-radius: 10px;
   opacity: 1;
+
 }
