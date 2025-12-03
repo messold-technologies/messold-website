@@ -4824,7 +4824,7 @@ h2#starlight-project-title span {
   color: var(--csgoal-muted);
 }
 
-#cs-page-goal-1 .csgoal__sub, .csps-story__body, csgoal__sub  {
+#cs-page-goal-1 .csgoal__sub, .csps-story__body, .csgoal__sub  {
  text-align: left;
 }
 
@@ -11967,6 +11967,7 @@ display: none;
   opacity: 1;
 
 }
+
 
 
 
