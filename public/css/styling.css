@@ -4815,7 +4815,7 @@ h2#starlight-project-title span {
   color: #000;
 }
 
-#cs-page-goal-1 .csgoal__sub, .csps-story__body, .csgoal__sub, #csps-title-solution, .csps-story__text ul li {
+#cs-page-goal-1 .csgoal__sub, .csps-story__body, .csgoal__sub, #csps-title-solution, .csps-story__text ul li, #csps-title-results {
   max-width: 70ch;
   margin: 0 auto;
   font-size: clamp(1rem, 2.2vw, 1.125rem);
@@ -4824,11 +4824,11 @@ h2#starlight-project-title span {
   color: var(--csgoal-muted);
 }
 
-#cs-page-goal-1 .csgoal__sub, .csps-story__body, .csgoal__sub, #csps-title-solution, .csps-story__text ul li  {
+#cs-page-goal-1 .csgoal__sub, .csps-story__body, .csgoal__sub, #csps-title-solution, .csps-story__text ul li, #csps-title-results  {
  text-align: left;
 }
 
-h2#csps-title-solution {
+h2#csps-title-solution, h2#csps-title-results {
     max-width: 65ch;
     font-weight: 600;
     color: #000;
@@ -11974,6 +11974,7 @@ display: none;
   opacity: 1;
 
 }
+
 
 
 
