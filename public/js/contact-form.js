@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentStep = 0;
 
   // Hide form initially
-  formContainer.style.display = "none";
+  if (formContainer) formContainer.style.display = "none";
   steps.forEach(s => s.style.display = "none");
   if (progress) progress.style.width = "0%";
 
@@ -30,9 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const inputs = step.querySelectorAll("input, select, textarea");
     inputs.forEach(input => {
-      const isOptional = input.id === "website" || input.id === "social" || input.id === "adspend" || input.id === "notes";
       let errorEl = input.parentElement.querySelector(".error");
-
       if (!errorEl) {
         errorEl = document.createElement("p");
         errorEl.className = "error";
@@ -44,11 +42,24 @@ document.addEventListener("DOMContentLoaded", () => {
       let msg = "";
       const val = (input.value || "").trim();
 
-      if (!isOptional && input.required && val === "") msg = "This field is required!";
+      // Required check
+      if (input.required && val === "") {
+        msg = "This field is required!";
+      }
 
+      // Additional validation when value exists
       if (!msg && val) {
-        if (input.type === "tel" && !/^[0-9]{10}$/.test(val)) msg = "Enter a valid 10-digit number!";
-        if (input.type === "url" && !/^https?:\/\/\S+$/.test(val)) msg = "Enter a valid URL!";
+        if (input.type === "tel" && !/^[0-9]{10}$/.test(val)) {
+          msg = "Enter a valid 10-digit number!";
+        }
+
+        if (input.type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) {
+          msg = "Enter a valid email address!";
+        }
+
+        if (input.type === "url" && !/^https?:\/\/\S+$/.test(val)) {
+          msg = "Enter a valid URL!";
+        }
       }
 
       errorEl.textContent = msg;
@@ -58,52 +69,51 @@ document.addEventListener("DOMContentLoaded", () => {
     return valid;
   }
 
-  function getLabel(input) {
-    const container = input.closest(".form-step");
-    const h2 = container.querySelectorAll("h2")[1] || container.querySelector("h2");
-    return h2 ? h2.textContent.replace(":", "").trim() : input.id;
-  }
-
   function buildReview() {
     const reviewBox = document.getElementById("review");
 
     reviewBox.innerHTML = `
       <h3>Your Answers</h3>
       ${Array.from(form.querySelectorAll("input, select, textarea"))
-        .filter(input => input.id) 
-        .map(input => {
-          return `<p><strong>${getLabel(input)}:</strong> ${input.value || "-"}</p>`;
-        })
+        .map(input => `
+          <p><strong>${input.previousElementSibling?.innerText || input.id}:</strong>
+          ${input.value || "-"}</p>
+        `)
         .join("")}
     `;
   }
 
   // Start button
-  startBtn.addEventListener("click", () => {
-    homeScreen.style.display = "none";
-    formContainer.style.display = "block";
-    currentStep = 0;
-    showStep(currentStep);
-  });
+  if (startBtn) {
+    startBtn.addEventListener("click", () => {
+      if (homeScreen) homeScreen.style.display = "none";
+      if (formContainer) formContainer.style.display = "block";
+      currentStep = 0;
+      showStep(currentStep);
+    });
+  }
 
   // Navigation
-  formContainer.addEventListener("click", e => {
-    const el = e.target;
-    if (el.classList.contains("next-btn")) {
-      if (validateStep(currentStep) && currentStep < steps.length - 1) {
-        currentStep++;
+  if (formContainer) {
+    formContainer.addEventListener("click", e => {
+      const el = e.target;
+
+      if (el.classList.contains("next-btn") || el.classList.contains("next-phase")) {
+        if (validateStep(currentStep) && currentStep < steps.length - 1) {
+          currentStep++;
+          showStep(currentStep);
+        }
+      }
+
+      if (el.classList.contains("prev-btn") && currentStep > 0) {
+        currentStep--;
         showStep(currentStep);
       }
-    }
-    if (el.classList.contains("prev-btn") && currentStep > 0) {
-      currentStep--;
-      showStep(currentStep);
-    }
-  });
+    });
+  }
 });
 
 
-// Global callback for JSONP
 function myCallback(response) {
   const form = document.getElementById("surveyForm");
   const submitBtn = form.querySelector(".submit-btn");
@@ -127,7 +137,7 @@ function myCallback(response) {
   }
 }
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyiqCzTcCyDpPjDnX-4z0UAV5j6zFyOppOs99je2qOKDCd-RvMvISMD0PvDv43_0OYY/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwzSpoZ1-skbdhuGXo0dzwmslnz0Sg__gsMOF6cBPYLz2LtHChX_ier8gp3uF2FowEP/exec";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("surveyForm");
@@ -139,9 +149,11 @@ document.addEventListener("DOMContentLoaded", () => {
     submitBtn.disabled = true;
     submitBtn.textContent = "Submitting...";
 
+    document.querySelectorAll(".error-global").forEach(err => err.remove());
+
     const data = {};
     form.querySelectorAll("input, select, textarea").forEach(input => {
-      if (input.id) data[input.id] = input.value;
+      data[input.id] = input.value;
     });
 
     const params = new URLSearchParams({ ...data, callback: "myCallback" });
