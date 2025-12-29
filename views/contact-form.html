@@ -222,187 +222,193 @@ Full-Service Digital Agency."
 
         <form id="surveyForm" novalidate>
 
-      <!-- ================== PHASE 1 ================== -->
-      <div class="form-step">
-        <h2 class="phase-title">Phase 1: Initial Information</h2>
-        <h2>1. Name</h2>
-        <input type="text" id="name" required placeholder="Type your answer here...">
-        <p class="error"></p>
-        <div class="button-group">
-          <button type="button" class="next-btn">OK</button>
-        </div>
-      </div>
+  <!-- ================== PHASE 1 ================== -->
+  <div class="form-step">
+    <h2 class="phase-title">Phase 1: Initial Information</h2>
+    <h2>1. Name</h2>
+    <input type="text" id="name" required placeholder="Type your answer here...">
+    <p class="error"></p>
+    <div class="button-group">
+      <button type="button" class="next-btn">OK</button>
+    </div>
+  </div>
 
-      <div class="form-step">
-        <h2>2. Mobile Number</h2>
-        <input type="tel" id="mobile" pattern="[0-9]{10}" required placeholder="10-digit number">
-        <p class="error"></p>
-        <div class="button-group">
-          <button type="button" class="prev-btn">&lt;</button>
-          <button type="button" class="next-btn">OK</button>
-        </div>
-      </div>
+  <div class="form-step">
+    <h2>2. Email</h2>
+    <input type="email" id="email" required placeholder="example@email.com">
+    <p class="error"></p>
+    <div class="button-group">
+      <button type="button" class="prev-btn">&lt;</button>
+      <button type="button" class="next-btn">OK</button>
+    </div>
+  </div>
 
-      <div class="form-step">
-        <h2>3. What Service are you looking for?</h2>
-        <select id="service" required>
-          <option value="">--Select--</option>
-          <option>E-Commerce</option>
-          <option>Website</option>
-          <option>Social Management</option>
-          <option>All of the Above</option>
-        </select>
-        <p class="error"></p>
-        <div class="button-group">
-          <button type="button" class="prev-btn">&lt;</button>
-          <button type="button" class="next-btn">OK</button>
-        </div>
-      </div>
+  <div class="form-step">
+    <h2>3. Mobile Number</h2>
+    <input type="tel" id="mobile" pattern="[0-9]{10}" required placeholder="10-digit number">
+    <p class="error"></p>
+    <div class="button-group">
+      <button type="button" class="prev-btn">&lt;</button>
+      <button type="button" class="next-btn">OK</button>
+    </div>
+  </div>
 
-      <div class="form-step">
-        <h2>4. Website (If available)</h2>
-        <input type="text" id="website" placeholder="https://example.com">
-        <div class="button-group">
-          <button type="button" class="prev-btn">&lt;</button>
-          <button type="button" class="next-btn">OK</button>
-        </div>
-      </div>
+  <div class="form-step">
+    <h2>4. What Service are you looking for?</h2>
+    <select id="service" required>
+      <option value="">--Select--</option>
+      <option>E-Commerce</option>
+      <option>Website</option>
+      <option>Social Management</option>
+      <option>All of the Above</option>
+    </select>
+    <p class="error"></p>
+    <div class="button-group">
+      <button type="button" class="prev-btn">&lt;</button>
+      <button type="button" class="next-btn">OK</button>
+    </div>
+  </div>
 
-      <div class="form-step">
-        <h2>5. Social Media (If available)</h2>
-        <input type="text" id="social" placeholder="@username">
-        <div class="button-group">
-          <button type="button" class="prev-btn">&lt;</button>
-          <button type="button" class="next-btn">OK</button>
-        </div>
-      </div>
+  <div class="form-step">
+    <h2>5. Website (If available)</h2>
+    <input type="text" id="website" placeholder="https://example.com">
+    <div class="button-group">
+      <button type="button" class="prev-btn">&lt;</button>
+      <button type="button" class="next-btn">OK</button>
+    </div>
+  </div>
 
-      <div class="form-step">
-        <h2>6. When do you want to start the project?</h2>
-        <select id="urgency" required>
-          <option value="">--Select--</option>
-          <option>Immediate</option>
-          <option>Within 2 Weeks</option>
-          <option>1 Month</option>
-          <option>Just Exploring</option>
-        </select>
-        <p class="error"></p>
-        <div class="button-group">
-          <button type="button" class="prev-btn">&lt;</button>
-          <button type="button" class="next-btn">OK</button>
-        </div>
-      </div>
+  <div class="form-step">
+    <h2>6. Social Media (If available)</h2>
+    <input type="text" id="social" placeholder="@username">
+    <div class="button-group">
+      <button type="button" class="prev-btn">&lt;</button>
+      <button type="button" class="next-btn">OK</button>
+    </div>
+  </div>
 
-      <div class="form-step">
-        <h2>7. Notes</h2>
-        <textarea id="notes" placeholder="Add any extra details..."></textarea>
-        <div class="button-group">
-          <button type="button" class="prev-btn">&lt;</button>
-          <button type="button" class="next-btn">OK</button>
-        </div>
-      </div>
+  <div class="form-step">
+    <h2>7. When do you want to start the project?</h2>
+    <select id="urgency" required>
+      <option value="">--Select--</option>
+      <option>Immediate</option>
+      <option>Within 2 Weeks</option>
+      <option>1 Month</option>
+      <option>Just Exploring</option>
+    </select>
+    <p class="error"></p>
+    <div class="button-group">
+      <button type="button" class="prev-btn">&lt;</button>
+      <button type="button" class="next-btn">OK</button>
+    </div>
+  </div>
 
-      <div class="form-step">
-        <h2>8. What’s your estimated budget?</h2>
-        <select id="budget" required>
-          <option value="">--Select--</option>
-          <option>₹25k - ₹35k (Launch-ready website)</option>
-          <option>₹35k – ₹50k (Marketing-integrated website)</option>
-          <option>₹50k+ (Launch ads from Day 1)</option>
-        </select>
-        <p class="error"></p>
-        <div class="button-group">
-          <button type="button" class="prev-btn">&lt;</button>
-          <button type="button" class="next-btn">OK</button>
-        </div>
-      </div>
+  <div class="form-step">
+    <h2>8. Notes</h2>
+    <textarea id="notes" placeholder="Add any extra details..."></textarea>
+    <div class="button-group">
+      <button type="button" class="prev-btn">&lt;</button>
+      <button type="button" class="next-btn">OK</button>
+    </div>
+  </div>
 
-      <div class="form-step">
-        <h2>9. Are your products ready?</h2>
-        <select id="products" required>
-          <option value="">--Select--</option>
-          <option>Yes, I have final products ready to sell</option>
-          <option>Yes, I know what I’ll sell but haven’t finalized everything</option>
-          <option>No, I’m still deciding what to sell</option>
-          <option>I need help identifying what to sell</option>
-        </select>
-        <p class="error"></p>
-        <div class="button-group">
-          <button type="button" class="prev-btn">&lt;</button>
-          <button type="button" class="next-btn">Proceed to Phase 2</button>
-        </div>
-      </div>
+  <div class="form-step">
+    <h2>9. What’s your estimated budget?</h2>
+    <select id="budget" required>
+      <option value="">--Select--</option>
+      <option>₹25k - ₹35k (Launch-ready website)</option>
+      <option>₹35k – ₹50k (Marketing-integrated website)</option>
+      <option>₹50k+ (Launch ads from Day 1)</option>
+    </select>
+    <p class="error"></p>
+    <div class="button-group">
+      <button type="button" class="prev-btn">&lt;</button>
+      <button type="button" class="next-btn">OK</button>
+    </div>
+  </div>
 
-      <!-- ================== PHASE 2 ================== -->
+  <div class="form-step">
+    <h2>10. Are your products ready?</h2>
+    <select id="products" required>
+      <option value="">--Select--</option>
+      <option>Yes, I have final products ready to sell</option>
+      <option>Yes, I know what I’ll sell but haven’t finalized everything</option>
+      <option>No, I’m still deciding what to sell</option>
+      <option>I need help identifying what to sell</option>
+    </select>
+    <p class="error"></p>
+    <div class="button-group">
+      <button type="button" class="prev-btn">&lt;</button>
+      <button type="button" class="next-btn">Proceed to Phase 2</button>
+    </div>
+  </div>
 
-      <div class="form-step">
-                <h2 class="phase-title">Phase 2: Start Digital Marketing</h2>
+  <!-- ================== PHASE 2 ================== -->
+  <div class="form-step">
+    <h2 class="phase-title">Phase 2: Start Digital Marketing</h2>
+    <h2>1. Ad Spend (Monthly)</h2>
+    <select id="adspend">
+      <option value="">--Select--</option>
+      <option>35K - 50K</option>
+      <option>50K - 75K</option>
+      <option>75K - 1L</option>
+      <option>1L+</option>
+    </select>
+    <div class="button-group">
+      <button type="button" class="prev-btn">&lt;</button>
+      <button type="button" class="next-btn">Proceed to Phase 3</button>
+    </div>
+  </div>
 
-        <h2>1. Ad Spend (Monthly)</h2>
-        <select id="adspend" >
-          <option value="">--Select--</option>
-          <option>35K - 50K</option>
-          <option>50K - 75K</option>
-          <option>75K - 1L</option>
-          <option>1L+</option>
-        </select>
-        <div class="button-group">
-          <button type="button" class="prev-btn">&lt;</button>
-          <button type="button" class="next-btn">Proceed to Phase 3</button>
-        </div>
-      </div>
+  <!-- ================== PHASE 3 ================== -->
+  <div class="form-step">
+    <h2 class="phase-title">Phase 3: Scaling</h2>
+    <h2>1. Sales (Last 30 Days)</h2>
+    <select id="sales" required>
+      <option value="">--Select--</option>
+      <option>Not Started</option>
+      <option>Less than 50K</option>
+      <option>50K - 1L</option>
+      <option>1L - 3L</option>
+      <option>3L - 10L</option>
+      <option>10L - 25L</option>
+      <option>25L+</option>
+    </select>
+    <div class="button-group">
+      <button type="button" class="prev-btn">&lt;</button>
+      <button type="button" class="next-btn">OK</button>
+    </div>
+  </div>
 
-      <!-- ================== PHASE 3 ================== -->
+  <div class="form-step">
+    <h2>2. What’s your biggest problem?</h2>
+    <select id="problem" required>
+      <option value="">--Select--</option>
+      <option>Not sure, need assistance</option>
+      <option>Getting consistent sales / scaling profitably</option>
+      <option>Traffic but low conversion</option>
+      <option>No Google Ads/Retargeting/Scaling yet</option>
+      <option>Creatives/funnels outdated, performance dropping</option>
+      <option>No international campaigns yet</option>
+    </select>
+    <div class="button-group">
+      <button type="button" class="prev-btn">&lt;</button>
+      <button type="button" class="next-btn">Review Answers</button>
+    </div>
+  </div>
 
-      <div class="form-step">
-                <h2 class="phase-title">Phase 3: Scaling</h2>
+  <!-- ================== FINAL REVIEW ================== -->
+  <div class="form-step" id="final-step">
+    <h2>Review & Submit</h2>
+    <p>Please review your answers before submitting the form.</p>
+    <div id="review"></div>
+    <div class="button-group">
+      <button type="button" class="prev-btn">&lt;</button>
+      <button type="submit" class="submit-btn">Submit</button>
+    </div>
+  </div>
 
-        <h2>1. Sales (Last 30 Days)</h2>
-        <select id="sales" required>
-          <option value="">--Select--</option>
-          <option>Not Started</option>
-          <option>Less than 50K</option>
-          <option>50K - 1L</option>
-          <option>1L - 3L</option>
-          <option>3L - 10L</option>
-          <option>10L - 25L</option>
-          <option>25L+</option>
-        </select>
-        <div class="button-group">
-          <button type="button" class="prev-btn">&lt;</button>
-          <button type="button" class="next-btn">OK</button>
-        </div>
-      </div>
-
-      <div class="form-step">
-        <h2>. What’s your biggest problem?</h2>
-        <select id="problem" required>
-          <option value="">--Select--</option>
-          <option>Not sure, need assistance</option>
-          <option>Getting consistent sales / scaling profitably</option>
-          <option>Traffic but low conversion</option>
-          <option>No Google Ads/Retargeting/Scaling yet</option>
-          <option>Creatives/funnels outdated, performance dropping</option>
-          <option>No international campaigns yet</option>
-        </select>
-        <div class="button-group">
-          <button type="button" class="prev-btn">&lt;</button>
-          <button type="button" class="next-btn">Review Answers</button>
-        </div>
-      </div>
-
-      <!-- ================== FINAL REVIEW ================== -->
-      <div class="form-step" id="final-step">
-        <h2>Review & Submit</h2>
-        <p>Please review your answers before submitting the form.</p>
-        <div id="review"></div>
-        <div class="button-group">
-          <button type="button" class="prev-btn">&lt;</button>
-          <button type="submit" class="submit-btn">Submit</button>
-        </div>
-      </div>
-
-    </form>
+</form>
       </div>
     </section>
 
@@ -658,4 +664,5 @@ Full-Service Digital Agency."
     <script src="js/script.js"></script>
   </body>
 </html>
+
 
