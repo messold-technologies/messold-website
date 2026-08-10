@@ -2246,6 +2246,7 @@ body {
       /* ================= SECTIONS ================= */
       section {
         position: relative;
+        padding: clamp(80px, 9.5vw, 158px) 0;
       }
       .dark {
         background: var(--ink);
