@@ -1131,6 +1131,26 @@ module.exports = function(app)
     {
         res.render('pricing-model-web-page.html')
     })
+    app.get('/development-plan', function(req, res)
+    {
+        res.render('pricing-development.html')
+    })
+    app.get('/marketing-plan', function(req, res)
+    {
+        res.render('pricing-marketing.html')
+    })
+    app.get('/social-media-plan', function(req, res)
+    {
+        res.render('pricing-social-media.html')
+    })
+    app.get('/website-maintainence', function(req, res)
+    {
+        res.render('pricing-maintainence.html')
+    })
+    app.get('/ugc-management-service', function(req, res)
+    {
+        res.render('ugc-service.html')
+    })
     app.get('/our-work', function(req, res)
     {
         res.render('our-work.html')
