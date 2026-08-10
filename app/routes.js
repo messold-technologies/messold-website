@@ -1133,7 +1133,7 @@ module.exports = function(app)
     })
     app.get('/development-plan', function(req, res)
     {
-        res.render('pricing-development.html')
+        res.render('development-pricing.html')
     })
     app.get('/marketing-plan', function(req, res)
     {
@@ -1145,7 +1145,7 @@ module.exports = function(app)
     })
     app.get('/website-maintainence', function(req, res)
     {
-        res.render('pricing-maintainence.html')
+        res.render('website-maintainence.html')
     })
     app.get('/ugc-management-service', function(req, res)
     {
